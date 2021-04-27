@@ -56,7 +56,7 @@ section {
 }
 
 body {
-  background-color: #583d72 !important;
+  
   margin: 0;
   font-family: Nunito, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
@@ -8970,7 +8970,7 @@ a:focus {
 }
 #wrapper #content-wrapper {
    
-  background-color: rgba(40, 42, 54) !important;
+  /* AQUI MUDA TODA A COR DO SITE, O BACKGROUND NO CASO... */
   width: 100%;
   overflow-x: hidden;
 }
@@ -10270,7 +10270,7 @@ form.user .btn-user {
   animation: noise-anim-2 3s infinite linear alternate-reverse;
 }
 footer.sticky-footer {
-  background-color: rgba(40, 42, 54) !important;
+  
   padding: 2rem 0;
   flex-shrink: 0;
 }
