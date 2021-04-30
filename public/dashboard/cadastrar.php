@@ -54,7 +54,7 @@ echo "
                             <div class='col-lg-6'>
                                 <div class='p-5'>
                                     <div class='text-center'>
-                                        <h1 class='h4 text-gray-900 mb-4'>Bem vindo de volta!</h1>
+                                        <h1 class='h4 text-gray-900 mb-4'>Cadastro realizado!</h1>
                                     </div>
                                     <form class='user'>
                                         <div class='form-group'>
