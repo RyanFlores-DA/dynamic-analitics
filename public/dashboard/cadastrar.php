@@ -14,9 +14,8 @@ if (!empty($_POST) AND (empty($_POST['usuario']) OR empty($_POST['senha']))) {
 }
 
 $sql = "INSERT INTO usuario VALUES ";
-$sql .= "('$id','$nome', '$usuario', '$senha')"; 
-mysqli_query($strcon,$sql) or die("Erro ao tentar cadastrar registro");
-mysqli_close($strcon);
+$sql .= "('$id','$nome', '$usuario', '$senha')" or die ("Erro de cadastro!"); 
+
 echo "
 <!DOCTYPE html>
 <html lang='en'>
