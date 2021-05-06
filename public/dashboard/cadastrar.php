@@ -7,6 +7,12 @@ $senha = $_POST['senha'];
 if (!$strcon) {
  die('Não foi possível conectar ao Banco de Dados');
 }
+
+// VERIFICA SE FOI DIGITADO USUÁRIO E SENHA FOI DIGITADO
+if (!empty($_POST) AND (empty($_POST['usuario']) OR empty($_POST['senha']))) {
+    header("Location: register.php"); exit;
+}
+
 $sql = "INSERT INTO usuario VALUES ";
 $sql .= "('$id','$nome', '$usuario', '$senha')"; 
 mysqli_query($strcon,$sql) or die("Erro ao tentar cadastrar registro");
