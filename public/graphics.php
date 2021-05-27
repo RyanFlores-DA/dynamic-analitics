@@ -20,12 +20,7 @@ $user = $_SESSION['usuario'];
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <link rel="shortcut icon" href="assets/css/images/logo.png" type="image/x-icon">
   <link rel="stylesheet" href="dashboard/css/showgraph.css">
-  <script defer src="dashboard/js/showcharts.js"></script>
   <meta name="description" content="">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-
-
   <link href="dashboard/css/gstile.css" rel="stylesheet">
   <title>Dashboard</title>
  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
@@ -36,7 +31,6 @@ $user = $_SESSION['usuario'];
   <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
   <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
   <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
-  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
   
   
 </head>
@@ -140,28 +134,31 @@ $user = $_SESSION['usuario'];
                 <div class="card-wrapper mbr-flex mbr-column mbr-pt-3 mbr-pb-3 mbr-px-4">
                     <div class="card-img mbr-pb-3">
                         <div class="iconfont-wrapper">
+                            <span class="amp-iconfont fa-heart fa"><svg width="100%" height="100%" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M896 1664q-26 0-44-18l-624-602q-10-8-27.5-26t-55.5-65.5-68-97.5-53.5-121-23.5-138q0-220 127-344t351-124q62 0 126.5 21.5t120 58 95.5 68.5 76 68q36-36 76-68t95.5-68.5 120-58 126.5-21.5q224 0 351 124t127 344q0 221-229 450l-623 600q-18 18-44 18z"></path></svg></span>
                         </div>
                     </div>
                     <div class="card-box">
-                        <h3 class="card-title mbr-bold mbr-fonts-style display-5" >IDH</h3>
-                        <p class="card-text mbr-fonts-style mbr-pt-2 display-7">Indice de desenvolvimento Humano.</p>
-                        <div class="card-btn mbr-section-btn mbr-pt-2"><a class="btn btn-lg btn-primary display-7" href="./graficos.php?p=idh">Mostrar</a>
+                        <h3 class="card-title mbr-bold mbr-fonts-style display-5">Copywriting</h3>
+                        <h4 class="card-subtitle mbr-pt-3 mbr-fonts-style mbr-bold display-7">Card Subtitle</h4>
+                        <p class="card-text mbr-fonts-style mbr-pt-2 display-7">I write articles, product descriptions, texts for advertising and<br>letters.</p>
+                        <div class="card-btn mbr-section-btn mbr-pt-2">
+                            <a class="btn btn-lg btn-primary display-7" href="#">Read More</a>
                         </div>
                     </div>
                 </div>
             </div>
-            
             <div class="card mbr-col-sm-12 mbr-col-md-8 mbr-col-lg-4 md-pb">
                 <div class="card-wrapper mbr-flex mbr-column mbr-pt-3 mbr-pb-3 mbr-px-4">
                     <div class="card-img mbr-pb-3">
                         <div class="iconfont-wrapper">
-                            <span class="amp-iconfont fa-suitcase fa"></span>
+                            <span class="amp-iconfont fa-suitcase fa"><svg width="100%" height="100%" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M640 384h512v-128h-512v128zm-352 0v1280h-64q-92 0-158-66t-66-158v-832q0-92 66-158t158-66h64zm1120 0v1280h-1024v-1280h128v-160q0-40 28-68t68-28h576q40 0 68 28t28 68v160h128zm384 224v832q0 92-66 158t-158 66h-64v-1280h64q92 0 158 66t66 158z"></path></svg></span>
                         </div>
                     </div>
                     <div class="card-box">
-                        <h3 class="card-title mbr-bold mbr-fonts-style display-5">PIB</h3>
-                        <p class="card-text mbr-fonts-style mbr-pt-2 display-7">Produto interno bruto</p>
-                        <div class="card-btn mbr-section-btn mbr-pt-2"><a class="btn btn-lg btn-primary display-7" href="./graficos.php?p=pib">Mostrar</a>
+                        <h3 class="card-title mbr-bold mbr-fonts-style display-5">Illustration</h3>
+                        <h4 class="card-subtitle mbr-pt-3 mbr-fonts-style mbr-bold display-7">Card Subtitle</h4>
+                        <p class="card-text mbr-fonts-style mbr-pt-2 display-7">I'll draw cute illustrations for your project. My favorite techniques are graphics and watercolor.</p>
+                        <div class="card-btn mbr-section-btn mbr-pt-2"><a class="btn btn-lg btn-primary display-7" href="#">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -170,13 +167,15 @@ $user = $_SESSION['usuario'];
                 <div class="card-wrapper mbr-flex mbr-column mbr-pt-3 mbr-pb-3 mbr-px-4">
                     <div class="card-img mbr-pb-3">
                         <div class="iconfont-wrapper">
+                            <span class="amp-iconfont fa-camera fa"><svg width="100%" height="100%" viewBox="0 0 2048 1792" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M1024 672q119 0 203.5 84.5t84.5 203.5-84.5 203.5-203.5 84.5-203.5-84.5-84.5-203.5 84.5-203.5 203.5-84.5zm704-416q106 0 181 75t75 181v896q0 106-75 181t-181 75h-1408q-106 0-181-75t-75-181v-896q0-106 75-181t181-75h224l51-136q19-49 69.5-84.5t103.5-35.5h512q53 0 103.5 35.5t69.5 84.5l51 136h224zm-704 1152q185 0 316.5-131.5t131.5-316.5-131.5-316.5-316.5-131.5-316.5 131.5-131.5 316.5 131.5 316.5 316.5 131.5z"></path></svg></span>
                         </div>
                     </div>
                     <div class="card-box">
-                        <h3 class="card-title mbr-bold mbr-fonts-style display-5">Movimento Pendular</h3>
-                        <p class="card-text mbr-fonts-style mbr-pt-2 display-7">Movimento pendular da RMR</p>
+                        <h3 class="card-title mbr-bold mbr-fonts-style display-5">Website Development</h3>
+                        <h4 class="card-subtitle mbr-pt-3 mbr-fonts-style mbr-bold display-7">Card Subtitle</h4>
+                        <p class="card-text mbr-fonts-style mbr-pt-2 display-7">Examples of works are available in the portfolio. I will make a modern responding site.</p>
                         <div class="card-btn mbr-section-btn mbr-pt-2">
-                            <a class="btn btn-lg btn-primary display-7" href="./graficos.php?p=pendular">Mostrar</a>
+                            <a class="btn btn-lg btn-primary display-7" href="#">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -185,28 +184,68 @@ $user = $_SESSION['usuario'];
         </div>
     </div>
 </section>
-<?php 
-    $valor = @$_GET['p'];
-    if($valor == 'idh'){require_once 'showidh.php';}
-    if($valor == 'pib'){require_once 'showpib.php';}
-    if($valor == 'pendular'){require_once 'showpendular.php';}
-?>
-<!-- PARTE DOS GRÁFICOS 
-<div class="container-fluid" style="margin-top: 40px">
-      <div class="row">
-        <div class="col-md-6">
-          <?php include('dashboard/js/demo/pibchart.php');?>
-        <div class="collapse"id="piechart" style="width: 800px; height: 500px;"></div>
-        <hr>
-        </div>
-        <div class="col-md-4">
-        <?php include('dashboard/js/demo/idhchart.php');?>
-        <div id="top_x_div" style="width: 800px; height: 500px;"></div>
-        <hr>
-        </div>
-</div>
--->
 
+<section class="features1 cid-rbfmXWztry" id="features1-o">
+    
+
+    
+    <div class="container-fluid">
+        
+        <div class="mbr-row mbr-jc-c">
+            <div class="card mbr-col-sm-12 mbr-col-md-8 mbr-col-lg-4 md-pb">
+                <div class="card-wrapper mbr-flex mbr-column mbr-pt-3 mbr-pb-3 mbr-px-4">
+                    <div class="card-img mbr-pb-3">
+                        <div class="iconfont-wrapper">
+                            <span class="amp-iconfont fa-heart fa"><svg width="100%" height="100%" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M896 1664q-26 0-44-18l-624-602q-10-8-27.5-26t-55.5-65.5-68-97.5-53.5-121-23.5-138q0-220 127-344t351-124q62 0 126.5 21.5t120 58 95.5 68.5 76 68q36-36 76-68t95.5-68.5 120-58 126.5-21.5q224 0 351 124t127 344q0 221-229 450l-623 600q-18 18-44 18z"></path></svg></span>
+                        </div>
+                    </div>
+                    <div class="card-box">
+                        <h3 class="card-title mbr-bold mbr-fonts-style display-5">Design</h3>
+                        <h4 class="card-subtitle mbr-pt-3 mbr-fonts-style mbr-bold display-7">Card Subtitle</h4>
+                        <p class="card-text mbr-fonts-style mbr-pt-2 display-7">Design of sites, booklets, mailings, any printed production, and banners.</p>
+                        <div class="card-btn mbr-section-btn mbr-pt-2">
+                            <a class="btn btn-lg btn-primary display-7" href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mbr-col-sm-12 mbr-col-md-8 mbr-col-lg-4 md-pb">
+                <div class="card-wrapper mbr-flex mbr-column mbr-pt-3 mbr-pb-3 mbr-px-4">
+                    <div class="card-img mbr-pb-3">
+                        <div class="iconfont-wrapper">
+                            <span class="amp-iconfont fa-suitcase fa"><svg width="100%" height="100%" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M640 384h512v-128h-512v128zm-352 0v1280h-64q-92 0-158-66t-66-158v-832q0-92 66-158t158-66h64zm1120 0v1280h-1024v-1280h128v-160q0-40 28-68t68-28h576q40 0 68 28t28 68v160h128zm384 224v832q0 92-66 158t-158 66h-64v-1280h64q92 0 158 66t66 158z"></path></svg></span>
+                        </div>
+                    </div>
+                    <div class="card-box">
+                        <h3 class="card-title mbr-bold mbr-fonts-style display-5">Branding</h3>
+                        <h4 class="card-subtitle mbr-pt-3 mbr-fonts-style mbr-bold display-7">Card Subtitle</h4>
+                        <p class="card-text mbr-fonts-style mbr-pt-2 display-7">Brand name, trademark, information basis, strategy for promoting a future brand.</p>
+                        <div class="card-btn mbr-section-btn mbr-pt-2"><a class="btn btn-lg btn-primary display-7" href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mbr-col-sm-12 mbr-col-md-8 mbr-col-lg-4 last-child">
+                <div class="card-wrapper mbr-flex mbr-column mbr-pt-3 mbr-pb-3 mbr-px-4">
+                    <div class="card-img mbr-pb-3">
+                        <div class="iconfont-wrapper">
+                            <span class="amp-iconfont fa-camera fa"><svg width="100%" height="100%" viewBox="0 0 2048 1792" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M1024 672q119 0 203.5 84.5t84.5 203.5-84.5 203.5-203.5 84.5-203.5-84.5-84.5-203.5 84.5-203.5 203.5-84.5zm704-416q106 0 181 75t75 181v896q0 106-75 181t-181 75h-1408q-106 0-181-75t-75-181v-896q0-106 75-181t181-75h224l51-136q19-49 69.5-84.5t103.5-35.5h512q53 0 103.5 35.5t69.5 84.5l51 136h224zm-704 1152q185 0 316.5-131.5t131.5-316.5-131.5-316.5-316.5-131.5-316.5 131.5-131.5 316.5 131.5 316.5 316.5 131.5z"></path></svg></span>
+                        </div>
+                    </div>
+                    <div class="card-box">
+                        <h3 class="card-title mbr-bold mbr-fonts-style display-5">Development</h3>
+                        <h4 class="card-subtitle mbr-pt-3 mbr-fonts-style mbr-bold display-7">Card Subtitle</h4>
+                        <p class="card-text mbr-fonts-style mbr-pt-2 display-7">We will help you to implement your ideas graphically. Check examples in our portfolio.</p>
+                        <div class="card-btn mbr-section-btn mbr-pt-2">
+                            <a class="btn btn-lg btn-primary display-7" href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
 
 <section class="header2 cid-r1xXC1gI5j" id="header2-8">
     
@@ -237,6 +276,5 @@ $user = $_SESSION['usuario'];
         </div>
     </div>
 </section>
-
 </body>
 </html>
