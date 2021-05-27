@@ -1,18 +1,28 @@
 <?php
-    include_once("conectar.php");
-    $usuario = $_POST['usuario'];
-    $senha = $_POST['senha'];
+    session_start();
+    include_once('conectar.php');
 
+    if(empty($_POST['usuario']) || empty($_POST['senha'])){   
+        header("Location: login.php");
+	    exit();
+    }
+    $usuario = mysqli_real_escape_string($strcon, $_POST['usuario']);
+    $senha = mysqli_real_escape_string($strcon, $_POST['senha']);
 
-  // Validação do usuário/senha digitados
-  $sql = "SELECT 'id', 'nome', 'nivel' FROM 'usuarios' WHERE ('usuario' = '".$usuario ."') AND ('senha' = '". SHA1($senha) ."') AND ('ativo' = 1) LIMIT 1";
-  $query = mysqli_query($strcon,$sql);   
-  if (mysqli_num_rows($query) != 1) {
-      // Mensagem de erro quando os dados são inválidos e/ou o usuário não foi encontrado
-      echo "Login inválido!"; exit;
-  } else {
-      // Salva os dados encontados na variável $resultado
-      $resultado = mysqli_fetch_assoc($query);
-  }
+    $sql = "SELECT * FROM usuario WHERE usuario = '{$usuario}' AND senha = md5('{$senha}')";
 
-  ?>
+    $result = mysqli_query($strcon, $sql);
+
+    $row = mysqli_num_rows($result);
+
+    if($row == 1){
+        $usuario_bd = mysqli_fetch_assoc($result);
+        $_SESSION['usuario'] = $usuario;
+        header('Location: ../graficos.php');
+        exit();
+    }else{
+        $_SESSION['not_authenticated'] = true;
+        header("Location: login.php");
+        exit();
+    }
+?>

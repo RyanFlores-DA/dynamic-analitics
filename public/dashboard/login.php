@@ -1,3 +1,6 @@
+<?php 
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -42,15 +45,24 @@
                                     <div class="text-center">
                                         <h1 class="h4 text-gray-900 mb-4">Bem vindo de volta!</h1>
                                     </div>
-                                    <form class="user">
+                                    <?php
+                                        if(isset($_SESSION['not_authenticated'])){
+                                    ?>
+                                    <div class="notification is-danger">
+                                        <p style="color:crimson">Digite um Usuário ou senha válido.</p>
+                                    </div>
+                                    <?php 
+                                        }
+                                        unset($_SESSION['not_authenticated']);
+                                    ?>
+                                    <form class="user" action="valida.php" method="POST">
                                         <div class="form-group">
-                                            <input type="email" class="form-control form-control-user"
-                                                id="exampleInputEmail" aria-describedby="emailHelp"
-                                                placeholder="Digite seu Email...">
+                                            <input type="text" class="form-control form-control-user" id="usuario" name="usuario"
+                                            aria-describedby="emailHelp" placeholder="Digite seu nome de Usuário">
                                         </div>
                                         <div class="form-group">
-                                            <input type="password" class="form-control form-control-user"
-                                                id="exampleInputPassword" placeholder="Sua senha">
+                                            <input type="password" class="form-control form-control-user" name="senha"
+                                                id="senha" placeholder="Sua senha">
                                         </div>
                                         <div class="form-group">
                                             <div class="custom-control custom-checkbox small">
@@ -58,9 +70,7 @@
                                                 <label class="custom-control-label" for="customCheck">Lembrar minha senha</label>
                                             </div>
                                         </div>
-                                        <a href="graficos.html" class="btn btn-primary btn-user btn-block">
-                                            Entrar
-                                        </a>
+                                        <input type="submit" class="btn btn-primary btn-user btn-block" name="enviar" value="Entrar">
                                       
                                     </form>
                                     <hr>

@@ -1,3 +1,6 @@
+<?php 
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -36,7 +39,27 @@
                             <div class="text-center">
                                 <h1 class="h4 text-gray-900 mb-4">Criar conta!</h1>
                             </div>
-                            <form class="user" method="POST" action="cadastrar.php">
+                            <?php 
+                                if(isset($_SESSION['usuario_exist'])){
+                            ?>
+                            <div class="notification is-danger">
+                                <p style="color:crimson">Este CPF já está cadastrado.</p>
+                            </div>
+                            <?php 
+                                }
+                                unset($_SESSION['usuario_exist']);
+                            ?>
+                            <?php 
+                                if(isset($_SESSION['status_cadastro'])){
+                            ?>
+                            <div class="notification is-danger">
+                                <p style="color:green">Usuário cadastrado com sucesso! <a class="small" href="login.php">Login!</a></p>
+                            </div>
+                            <?php 
+                                }
+                                unset($_SESSION['status_cadastro']);
+                            ?>
+                            <form class="user" method="POST" action="cadastro.php">
                                 <div class="form-group row">
                                     <div class="col-sm-6 mb-3 mb-sm-0">
                                         <input type="text" class="form-control form-control-user" name="name"
@@ -52,8 +75,8 @@
                                         placeholder="Endereço de Email">
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control form-control-user" name="id"
-                                        placeholder="CPF" size="14">
+                                    <input type="number" class="form-control form-control-user" name="cpf"
+                                        placeholder="CPF">
                                 </div>
                                 <div class="form-group row">
                                     <div class="col-sm-6 mb-3 mb-sm-0">
@@ -65,15 +88,15 @@
                                             id="re" placeholder="Repeat Password">
                                     </div> -->
                                 </div>
-                                <input type="submit" class="btn btn-primary btn-user btn-block" name="enviar" value="Registrar Conta" href="login.html">
+                                <input type="submit" class="btn btn-primary btn-user btn-block" name="enviar" value="Registrar Conta">
                                 
                             </form>
                             <hr>
                             <div class="text-center">
-                                <a class="small" href="forgot-password.html">Esqueci a senha?</a>
+                                <a class="small" href="">Esqueci a senha?</a>
                             </div>
                             <div class="text-center">
-                                <a class="small" href="login.html">Já tem uma conta? Login!</a>
+                                <a class="small" href="login.php">Já tem uma conta? Login!</a>
                             </div>
                         </div>
                     </div>
