@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch scrap",
+            "request": "launch",
+            "mainClass": "com.mycompany.backscraping.scrap",
+            "projectName": "backScraping"
+        },
+        {
+            "type": "java",
             "name": "Launch App",
             "request": "launch",
             "mainClass": "$package.App"

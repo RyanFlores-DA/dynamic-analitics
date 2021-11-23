@@ -1,5 +1,5 @@
 :root {
-  --blue: #4e73df;
+  --blue: #544179;
   --indigo: #6610f2;
   --purple: #6f42c1;
   --pink: #e83e8c;
@@ -12,7 +12,7 @@
   --white: #fff;
   --gray: #858796;
   --gray-dark: #5a5c69;
-  --primary: #4e73df;
+  --primary: #544179;
   --secondary: #858796;
   --success: #1cc88a;
   --info: #36b9cc;
@@ -147,7 +147,7 @@ sup {
   top: -0.5em;
 }
 a {
-  color: #4e73df;
+  color: #544179;
   text-decoration: none;
   background-color: transparent;
 }
@@ -2219,13 +2219,13 @@ fieldset:disabled a.btn {
 }
 .btn-primary {
   color: #fff;
-  background-color: #4e73df;
-  border-color: #4e73df;
+  background-color: #22be88;
+  border-color: hsl(228, 10%, 90%);
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #2e59d9;
-  border-color: #2653d4;
+  background-color: #0b9729;
+  border-color: #f0f1f2;
 }
 .btn-primary.focus,
 .btn-primary:focus {
@@ -2237,8 +2237,8 @@ fieldset:disabled a.btn {
 .btn-primary.disabled,
 .btn-primary:disabled {
   color: #fff;
-  background-color: #4e73df;
-  border-color: #4e73df;
+  background-color: #544179;
+  border-color: #544179;
 }
 .btn-primary:not(:disabled):not(.disabled).active,
 .btn-primary:not(:disabled):not(.disabled):active,
@@ -2498,13 +2498,13 @@ fieldset:disabled a.btn {
   box-shadow: 0 0 0 0.2rem rgba(115, 116, 128, 0.5);
 }
 .btn-outline-primary {
-  color: #4e73df;
-  border-color: #4e73df;
+  color: #544179;
+  border-color: #544179;
 }
 .btn-outline-primary:hover {
   color: #fff;
-  background-color: #4e73df;
-  border-color: #4e73df;
+  background-color: #544179;
+  border-color: #544179;
 }
 .btn-outline-primary.focus,
 .btn-outline-primary:focus {
@@ -2512,15 +2512,15 @@ fieldset:disabled a.btn {
 }
 .btn-outline-primary.disabled,
 .btn-outline-primary:disabled {
-  color: #4e73df;
+  color: #544179;
   background-color: transparent;
 }
 .btn-outline-primary:not(:disabled):not(.disabled).active,
 .btn-outline-primary:not(:disabled):not(.disabled):active,
 .show > .btn-outline-primary.dropdown-toggle {
   color: #fff;
-  background-color: #4e73df;
-  border-color: #4e73df;
+  background-color: #544179;
+  border-color: #544179;
 }
 .btn-outline-primary:not(:disabled):not(.disabled).active:focus,
 .btn-outline-primary:not(:disabled):not(.disabled):active:focus,
@@ -2739,7 +2739,7 @@ fieldset:disabled a.btn {
 }
 .btn-link {
   font-weight: 400;
-  color: #4e73df;
+  color: #544179;
   text-decoration: none;
 }
 .btn-link:hover {
@@ -3003,7 +3003,7 @@ input[type="submit"].btn-block {
 .dropdown-item:active {
   color: #fff;
   text-decoration: none;
-  background-color: #4e73df;
+  background-color: #544179;
 }
 .dropdown-item.disabled,
 .dropdown-item:disabled {
@@ -3320,8 +3320,8 @@ input[type="submit"].btn-block {
 }
 .custom-control-input:checked ~ .custom-control-label::before {
   color: #fff;
-  border-color: #4e73df;
-  background-color: #4e73df;
+  border-color: #544179;
+  background-color: #544179;
 }
 .custom-control-input:focus ~ .custom-control-label::before {
   box-shadow: 0 0 0 0.2rem rgba(78, 115, 223, 0.25);
@@ -3378,8 +3378,8 @@ input[type="submit"].btn-block {
 .custom-checkbox
   .custom-control-input:indeterminate
   ~ .custom-control-label::before {
-  border-color: #4e73df;
-  background-color: #4e73df;
+  border-color: #544179;
+  background-color: #544179;
 }
 .custom-checkbox
   .custom-control-input:indeterminate
@@ -3587,7 +3587,7 @@ input[type="submit"].btn-block {
   width: 1rem;
   height: 1rem;
   margin-top: -0.25rem;
-  background-color: #4e73df;
+  background-color: #544179;
   border: 0;
   border-radius: 1rem;
   -webkit-transition: background-color 0.15s ease-in-out,
@@ -3618,7 +3618,7 @@ input[type="submit"].btn-block {
 .custom-range::-moz-range-thumb {
   width: 1rem;
   height: 1rem;
-  background-color: #4e73df;
+  background-color: #544179;
   border: 0;
   border-radius: 1rem;
   -moz-transition: background-color 0.15s ease-in-out,
@@ -3652,7 +3652,7 @@ input[type="submit"].btn-block {
   margin-top: 0;
   margin-right: 0.2rem;
   margin-left: 0.2rem;
-  background-color: #4e73df;
+  background-color: #544179;
   border: 0;
   border-radius: 1rem;
   -ms-transition: background-color 0.15s ease-in-out,
@@ -3773,7 +3773,7 @@ input[type="submit"].btn-block {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #4e73df;
+  background-color: #544179;
 }
 .nav-fill .nav-item,
 .nav-fill > .nav-link {
@@ -4400,7 +4400,7 @@ input[type="submit"].btn-block {
   padding: 0.5rem 0.75rem;
   margin-left: -1px;
   line-height: 1.25;
-  color: #4e73df;
+  color: #544179;
   background-color: #fff;
   border: 1px solid #dddfeb;
 }
@@ -4428,8 +4428,8 @@ input[type="submit"].btn-block {
 .page-item.active .page-link {
   z-index: 3;
   color: #fff;
-  background-color: #4e73df;
-  border-color: #4e73df;
+  background-color: #544179;
+  border-color: #544179;
 }
 .page-item.disabled .page-link {
   color: #858796;
@@ -4500,7 +4500,7 @@ a.badge:hover {
 }
 .badge-primary {
   color: #fff;
-  background-color: #4e73df;
+  background-color: #544179;
 }
 a.badge-primary:focus,
 a.badge-primary:hover {
@@ -4771,7 +4771,7 @@ a.badge-dark:focus {
   color: #fff;
   text-align: center;
   white-space: nowrap;
-  background-color: #4e73df;
+  background-color: #544179;
   transition: width 0.6s ease;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -4856,8 +4856,8 @@ a.badge-dark:focus {
 .list-group-item.active {
   z-index: 2;
   color: #fff;
-  background-color: #4e73df;
-  border-color: #4e73df;
+  background-color: #544179;
+  border-color: #544179;
 }
 .list-group-item + .list-group-item {
   border-top-width: 0;
@@ -5858,7 +5858,7 @@ a.close.disabled {
   vertical-align: text-top !important;
 }
 .bg-primary {
-  background-color: #4e73df !important;
+  background-color: #544179 !important;
 }
 a.bg-primary:focus,
 a.bg-primary:hover,
@@ -5966,7 +5966,7 @@ button.bg-dark:hover {
   border-left: 0 !important;
 }
 .border-primary {
-  border-color: #4e73df !important;
+  border-color: #544179 !important;
 }
 .border-secondary {
   border-color: #858796 !important;
@@ -8785,7 +8785,7 @@ button.bg-dark:hover {
   color: #fff !important;
 }
 .text-primary {
-  color: #4e73df !important;
+  color: #544179 !important;
 }
 a.text-primary:focus,
 a.text-primary:hover {
@@ -9064,8 +9064,8 @@ a:focus {
   animation-timing-function: opacity cubic-bezier(0, 1, 0.4, 1);
 }
 .bg-gradient-primary {
-  background-color: #4e73df;
-  background-image: linear-gradient(180deg, #4e73df 10%, #224abe 100%);
+  background-color: #544179;
+  background-image: linear-gradient(180deg, #544179 10%, #224abe 100%);
   background-size: cover;
 }
 .bg-gradient-secondary {
@@ -9178,10 +9178,10 @@ a:focus {
   justify-content: center;
 }
 .border-left-primary {
-  border-left: 0.25rem solid #4e73df !important;
+  border-left: 0.25rem solid #544179 !important;
 }
 .border-bottom-primary {
-  border-bottom: 0.25rem solid #4e73df !important;
+  border-bottom: 0.25rem solid #544179 !important;
 }
 .border-left-secondary {
   border-left: 0.25rem solid #858796 !important;
@@ -9329,8 +9329,8 @@ a:focus {
   overflow: hidden;
 }
 .topbar .dropdown-list .dropdown-header {
-  background-color: #4e73df;
-  border: 1px solid #4e73df;
+  background-color: #544179;
+  border: 1px solid #544179;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   color: #fff;
@@ -9476,7 +9476,7 @@ a:focus {
 }
 .sidebar .nav-item .collapse .collapse-inner .collapse-item.active,
 .sidebar .nav-item .collapsing .collapse-inner .collapse-item.active {
-  color: #4e73df;
+  color: #544179;
   font-weight: 700;
 }
 .sidebar #sidebarToggle {
@@ -9881,17 +9881,17 @@ a:focus {
   }
 }
 .bg-login-image {
-  background: url(https://image.freepik.com/vetores-gratis/ilustracao-do-conceito-de-login_114360-757.jpg);
+  background: url(https://image.freepik.com/vetores-gratis/ilustracao-do-conceito-de-login-movel_114360-135.jpg);
   background-position: center;
   background-size: cover;
 }
 .bg-register-image {
-  background: url(https://image.freepik.com/vetores-gratis/ilustracao-do-conceito-de-login_114360-757.jpg);
+  background: url(https://image.freepik.com/vetores-gratis/ilustracao-do-conceito-de-login-movel_114360-135.jpg);
   background-position: center;
   background-size: cover;
 }
 .bg-password-image {
-  background: url(https://image.freepik.com/vetores-gratis/ilustracao-do-conceito-de-login_114360-757.jpg);
+  background: url(https://image.freepik.com/vetores-gratis/ilustracao-do-conceito-de-login-movel_114360-135.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -10261,7 +10261,7 @@ form.user .btn-user {
   content: attr(data-text);
   position: absolute;
   left: -2px;
-  text-shadow: 1px 0 #4e73df;
+  text-shadow: 1px 0 #544179;
   top: 0;
   color: #5a5c69;
   background: #f8f9fc;

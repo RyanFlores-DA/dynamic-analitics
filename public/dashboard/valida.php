@@ -18,7 +18,7 @@
     if($row == 1){
         $usuario_bd = mysqli_fetch_assoc($result);
         $_SESSION['usuario'] = $usuario;
-        header('Location: ../graficos.php');
+        header('Location: dashboard.php');
         exit();
     }else{
         $_SESSION['not_authenticated'] = true;
