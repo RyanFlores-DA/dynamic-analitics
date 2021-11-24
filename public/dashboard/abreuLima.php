@@ -110,7 +110,7 @@
                 </a>
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="abreuLima.php">Abreu e Lima</a>
+                        <a class="collapse-item" href="#">Abreu e Lima</a>
                         <a class="collapse-item" href="#">Araçoiaba</a>
                         <a class="collapse-item" href="#">Cabo de Santo Agostinho</a>
                         <a class="collapse-item" href="#">Camaragibe</a>
@@ -204,9 +204,12 @@
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
-
+                <h1 class="h3 mb-2 text-gray-800">Abreu e Lima</h1>
+                    <p class="mb-4">Dados coletados do site IBGE correspondentes aos bairros do Municípios
+                        de Abreu e Lima nos anos de 2000 e 2010
+                    </p>
                     <!-- Page Heading -->
-                    
+                    <hr class="sidebar-divider">
                     <!-- Content Row -->
                     
 
@@ -215,7 +218,7 @@
             <!-- Area Chart -->
                     
             
-                <iframe src="front-page.html" width="1800" height="1000" frameborder="0"></iframe>
+            <iframe width="1500" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=989fd202-97dc-4637-8769-8fbb063954ea&autoAuth=true&ctid=a06b3f6c-8017-4b3d-babd-fbdb8569d09d&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLWJyYXppbC1zb3V0aC1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldC8ifQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>
 
 
             <!-- End of Main Content -->
